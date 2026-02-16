@@ -10,8 +10,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="{% static 'myapp/img/favicon.png' %}" rel="icon">
-  <link href="{% static 'myapp/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <link href="{% static 'myapp/img/logo1.png' %}" rel="icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -41,7 +40,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="{% static 'myapp/img/logo1.png' %}" alt="">
         <h1 class="sitename">FlowTask</h1>
       </a>
 
@@ -74,7 +73,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+      <a class="btn-getstarted" href="{% url 'get_started' %}">Get Started</a>
 
     </div>
   </header>
@@ -91,22 +90,22 @@
             <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
               <div class="company-badge mb-4">
                 <i class="bi bi-gear-fill me-2"></i>
-                Trusted by remote teams and fast-growing startups
+                Trusted by remote teams and independent professionals.
               </div>
 
               <h1 class="mb-4">
-                Get More Done With Smarter Task Workflows
+                Turn Your Daily Tasks Into Clear, Actionable Workflows
               </h1>
 
               <p class="mb-4 mb-md-5">
-                FlowTask helps freelancers and teams plan, prioritize, and execute tasks faster using AI-powered productivity tools.
+                FlowTask helps freelancers and teams plan, prioritize, and execute tasks faster with intelligent task management.
               </p>
 
               <div class="hero-buttons">
-                <a href="#about" class="btn btn-primary me-0 me-sm-2 mx-1">Start Free Trial</a>
-                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-link mt-2 mt-sm-0 glightbox">
+                <a href="{% url 'get_started' %}" class="btn btn-primary me-0 me-sm-2 mx-1">Start Free Trial</a>
+                <a href="#" class="btn btn-link mt-2 mt-sm-0 glightbox">
                   <i class="bi bi-play-circle me-1"></i>
-                  Watch Demo
+                  See How It Works
                 </a>
               </div>
             </div>
@@ -131,52 +130,6 @@
           </div>
         </div>
 
-        <!-- <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
-          <div class="col-lg-3 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-trophy"></i>
-              </div>
-              <div class="stat-content">
-                <h4>3x Won Awards</h4>
-                <p class="mb-0">Vestibulum ante ipsum</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-briefcase"></i>
-              </div>
-              <div class="stat-content">
-                <h4>6.5k Faucibus</h4>
-                <p class="mb-0">Nullam quis ante</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-graph-up"></i>
-              </div>
-              <div class="stat-content">
-                <h4>80k Mauris</h4>
-                <p class="mb-0">Etiam sit amet orci</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-award"></i>
-              </div>
-              <div class="stat-content">
-                <h4>6x Phasellus</h4>
-                <p class="mb-0">Vestibulum ante ipsum</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
 
       </div>
 
@@ -462,7 +415,7 @@
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="display-4 mb-4">Ready to Work Smarter?</h2>
             <p class="mb-4">Start using FlowTask today and take control of your productivity.</p>
-            <a href="#" class="btn btn-cta">Get Started for Free</a>
+            <a href="{% url 'get_started' %}" class="btn btn-cta">Get Started for Free</a>
           </div>
 
           <!-- Abstract Background Elements -->
@@ -733,7 +686,7 @@
                 </li>
               </ul>
 
-              <a href="#" class="btn btn-primary">
+              <a href="{% url 'get_started' %}" class="btn btn-primary">
                 Get Started
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -776,7 +729,7 @@
                 </li>
               </ul>
 
-              <a href="#" class="btn btn-light">
+              <a href="{% url 'get_started' %}" class="btn btn-light">
                 Buy Now
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -818,7 +771,7 @@
                 </li>
               </ul>
 
-              <a href="#" class="btn btn-primary">
+              <a href="{% url 'get_started' %}" class="btn btn-primary">
                 Buy Now
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -914,7 +867,7 @@
             <div class="text-center">
               <h3>Ready to Work Smarter?</h3>
               <p>Start using FlowTask today and take control of your productivity.</p>
-              <a class="cta-btn" href="#">Get Started for Free</a>
+              <a class="cta-btn" href="{% url 'get_started' %}">Get Started for Free</a>
             </div>
           </div>
         </div>
@@ -1095,11 +1048,7 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">FlowTask</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">Mercy Dooshima Aule</a>
+        Designed by <a href="#">Mercy Dooshima Aule</a>
       </div>
     </div>
 
