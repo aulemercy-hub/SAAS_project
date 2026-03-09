@@ -5,11 +5,11 @@
 ![CSS3](https://img.shields.io/badge/CSS-3-blue)
 
 
-FlowTask is a modern SaaS landing page built to showcase a productivity and workflow management application.
+FlowTask is a modern SaaS landing page built to showcase productivity and workflow management application.
 
 📌 Project Overview
 
-FlowTask is designed to communicate how a task management application helps users:
+FlowTask is designed to communicate how task management application helps users:
 
 Organize daily tasks
 
@@ -22,6 +22,17 @@ Track progress efficiently
 Turn scattered work into structured workflows
 
 The landing page reflects how a real SaaS product would be presented to potential users and investors.
+
+## 📸 Project Screenshots
+
+### Homepage
+<img src="screenshots/homepage.PNG" width="700">
+
+### Features
+<img src="screenshots/features.PNG" width="700">
+
+### Pricing
+<img src="screenshots/pricing.PNG" width="700">
 
 
 📬 Contact
