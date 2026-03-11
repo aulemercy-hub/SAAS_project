@@ -41,9 +41,7 @@ If you'd like to collaborate or discuss this project:
 
 Email: aulemercy@gmail.com.com
 
-Portfolio: I will add later
-
-LinkedIn: I will add later
+LinkedIn: https://www.linkedin.com/in/mercyaule
 
 
 📝 Note
